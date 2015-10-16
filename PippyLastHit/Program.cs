@@ -73,18 +73,18 @@ namespace PippyLastHit
         {
             if (gameLoad)
             {
-                if (args.Msg == (ulong)Utils.WindowsMessages.WM_KEYDOWN && args.WParam == 65 && !Game.IsChatOpen)
+                if (args.Msg == (ulong)Utils.WindowsMessages.WM_KEYDOWN && args.WParam == 69 && !Game.IsChatOpen)
                 {
                     lastHittingHold = true;
                 }
-                else if (args.Msg == (ulong)Utils.WindowsMessages.WM_KEYUP && args.WParam == 65 && !Game.IsChatOpen)
+                else if (args.Msg == (ulong)Utils.WindowsMessages.WM_KEYUP && args.WParam == 69 && !Game.IsChatOpen)
                 {
                     lastHittingHold = false;
                 }
 
 
 
-                if (args.Msg == (ulong)Utils.WindowsMessages.WM_KEYDOWN && args.WParam == 84 && !Game.IsChatOpen && _lastToggleT + 1000 < Environment.TickCount)
+                if (args.Msg == (ulong)Utils.WindowsMessages.WM_KEYDOWN && args.WParam == 33 && !Game.IsChatOpen && _lastToggleT + 1000 < Environment.TickCount)
                 {
                     _lastToggleT = Environment.TickCount;
 
